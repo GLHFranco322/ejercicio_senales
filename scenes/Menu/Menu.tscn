@@ -4,12 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://dncxujshbxt8f" path="res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://nwbl03ueqyor" path="res://scenes/Buttons/RedGenerator/RedGenerator.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://cey6fuiebmhpe" path="res://scenes/Buttons/Reset/Reset.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bi3dq0aftsibd" path="res://scenes/Blocks/Red/BlockRed.tscn" id="4_d2jjm"]
 [ext_resource type="Script" uid="uid://ba56weqd7il8n" path="res://scenes/Menu/Menu.gd" id="5"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(1519.98, 67.3924)
 
-[node name="Menu" type="Node2D" unique_id=1111839764]
+[node name="Menu" type="Node2D" unique_id=1111839764 groups=["blocks"]]
 script = ExtResource("5")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1090269603]
@@ -22,6 +23,7 @@ offset_left = 154.0
 offset_top = 132.0
 offset_right = 282.0
 offset_bottom = 260.0
+blockScene = ExtResource("4_d2jjm")
 
 [node name="VioletGenerator" parent="." unique_id=656024276 instance=ExtResource("2")]
 offset_left = 867.0

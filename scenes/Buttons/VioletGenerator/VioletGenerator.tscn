@@ -2,14 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://c0f3vvctal5va" path="res://assets/block_violet.png" id="1"]
 [ext_resource type="Script" uid="uid://cdpr3gbbyfp2i" path="res://scenes/Buttons/VioletGenerator/violet_generator.gd" id="2_r2fdk"]
+[ext_resource type="PackedScene" uid="uid://b51x1yackyyc" path="res://scenes/Blocks/Violet/BlockViolet.tscn" id="3_tf7p5"]
 
 [node name="VioletGenerator" type="TextureButton" unique_id=2052057341]
 texture_normal = ExtResource("1")
 script = ExtResource("2_r2fdk")
+blockScene = ExtResource("3_tf7p5")
 
-[node name="Button" type="Button" parent="." unique_id=720630779]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-
-[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="." to="." method="_on_button_down"]

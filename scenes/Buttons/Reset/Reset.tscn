@@ -6,3 +6,5 @@
 [node name="Reset" type="TextureButton" unique_id=1920696435]
 texture_normal = ExtResource("1")
 script = ExtResource("2_vxotw")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
