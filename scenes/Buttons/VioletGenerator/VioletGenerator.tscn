@@ -7,4 +7,9 @@
 texture_normal = ExtResource("1")
 script = ExtResource("2_r2fdk")
 
-[connection signal="button_down" from="." to="." method="_on_button_down"]
+[node name="Button" type="Button" parent="." unique_id=720630779]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
